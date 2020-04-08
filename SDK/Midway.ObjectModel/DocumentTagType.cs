@@ -84,6 +84,27 @@ namespace Midway.ObjectModel
         /// </summary>
         [EnumMember]
         [Description("Изменен пункт доставки")]
-        ChangedDeliveryPlace = 11
+        ChangedDeliveryPlace = 11,
+
+        /// <summary>
+        /// Тег "ПЭП грузополучателя заверена".
+        /// </summary>
+        [EnumMember]
+        [Description("ПЭП грузополучателя заверена")]
+        AssuredConsigneeSimpleSignature = 12,
+
+        /// <summary>
+        /// Тег "ПЭП водителя о получении груза заверена".
+        /// </summary>
+        [EnumMember]
+        [Description("ПЭП водителя о получении груза заверена")]
+        AssuredDriverReceiveCargoSimpleSignature = 13,
+
+        /// <summary>
+        /// Тег "ПЭП водителя о сдаче груза заверена".
+        /// </summary>
+        [EnumMember]
+        [Description("ПЭП водителя о сдаче груза заверена")]
+        AssuredDriverDeliverCargoSimpleSignature = 14,
     }
 }

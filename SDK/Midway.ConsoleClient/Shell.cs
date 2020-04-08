@@ -2776,7 +2776,7 @@ namespace Midway.ConsoleClient
                                     break;
                             }
                         else
-                            Console.Out.WriteLine("Необходимо загрузить ответный титул транспортной накладной");
+                            Console.Out.WriteLine("Необходимо загрузить ответный титул товарно-транспортной накладной");
                         break;
 
                     default:
@@ -4105,7 +4105,7 @@ namespace Midway.ConsoleClient
             var documentId = UserInput.ReadParameter("Id документа");
             var response = _context.ServiceClient.PrintDocument(
                 GetCurrentCredentials(), 
-                new DocumentPrintingRequest {DocumentId = documentId });
+                new DocumentPrintingRequest { DocumentId = documentId });
             if (response == null)
             {
                 UserInput.Error("Неправильный идентификатор документа");
